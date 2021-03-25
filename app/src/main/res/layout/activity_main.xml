@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topView1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"/>
+
+    <View
+        android:id="@+id/topView"
+        android:layout_below="@+id/topView1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_wave_one"/>
+
+
+
+    <View
+        android:id="@+id/bottomView"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_wave_two"/>
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logoapp"
+        android:background="@drawable/button_bg"/>
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_icon"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#483D8B"
+        android:text="Ankush"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Build / Control Habits"
+        android:fontFamily="@font/montserrat_regular"
+        android:textStyle="bold"
+        android:textColor="#483D8B"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

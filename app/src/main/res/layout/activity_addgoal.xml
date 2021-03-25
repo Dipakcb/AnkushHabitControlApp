@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddgoalActivity">
+
+    <View
+        android:id="@+id/topView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"/>
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/arrow_back"
+        android:background="@color/colorPrimary"
+        />
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Goal"
+        android:textSize="32sp"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat_bold"/>
+
+    <TextView
+        android:id="@+id/heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="“The first step to becoming is to will it” - Mother Teresa."
+        android:textSize="14sp"
+        android:textColor="#ffff"
+        />
+
+    <View
+        android:id="@+id/topView2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/topView1"
+        android:background="@drawable/wave"/>
+
+
+    <EditText
+        android:id="@+id/goal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:paddingHorizontal="80dp"
+        android:layout_centerInParent="true"
+        android:maxLength="20"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint=" Enter Goal Name"
+        android:inputType="text"
+        android:singleLine="true"
+        android:background="@drawable/border_edittext"
+        />
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/button_bg"
+        android:layout_below="@+id/goal_name"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_centerInParent="true"
+        android:textColor="#ffff"
+        android:text="Submit"/>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit_button"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="150dp"
+        android:textColor="#483D8B"
+        android:fontFamily="@font/montserrat_bold"
+        android:background="@drawable/border_edittext"
+        android:layout_centerInParent="true"
+        android:text="Clear"/>
+</RelativeLayout>

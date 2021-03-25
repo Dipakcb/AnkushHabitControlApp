@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CounterActivity">
+
+    <View
+        android:id="@+id/topView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary" />
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/arrow_back" />
+
+
+    <View
+        android:id="@+id/topView2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/topView1"
+        android:background="@drawable/wave" />
+
+
+    <TextView
+        android:id="@+id/g_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Add Goal"
+        android:textColor="#ffff"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/startTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/g_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Start Date : "
+        android:textColor="#ffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/endTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/g_start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="End Date : "
+        android:textColor="#ffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/g_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/g_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/startTextView"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text=""
+        android:textColor="#ffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/g_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/g_start"
+        android:layout_toRightOf="@+id/endTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text=""
+        android:textColor="#ffff"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_share"
+        android:tooltipText="Share" />
+
+
+    <ImageView
+        android:id="@+id/ssView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/g_day"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/g_day"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/topView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_bg"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#ffff"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textDaysRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/g_day"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Days remaining"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/delete_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/montserrat_bold"
+        android:paddingHorizontal="100dp"
+        android:text="Restart"
+        android:textColor="#ffff" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_edittext"
+        android:fontFamily="@font/montserrat_bold"
+        android:paddingHorizontal="100dp"
+        android:text="Delete"
+        android:textColor="#483D8B" />
+
+
+</RelativeLayout>

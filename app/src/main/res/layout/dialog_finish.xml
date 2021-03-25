@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:background="@drawable/border_edittext"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:fontFamily="@font/montserrat_black"
+        android:textStyle="bold"
+        android:textColor="#FFD700"
+        android:gravity="center"
+        android:text="Congratulations !"/>
+
+    <ImageView
+        android:id="@+id/trophy_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_trophy"
+        />
+    <TextView
+        android:id="@+id/ok_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trophy_icon"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat_black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#FFD700"
+        android:text="You did it !"/>
+
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ok_msg"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="50dp"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:background="@drawable/button_bg"
+        android:layout_centerHorizontal="true"
+        android:text="Ok"/>
+
+
+
+
+</RelativeLayout>

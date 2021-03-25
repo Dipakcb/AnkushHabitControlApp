@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoalCompleted">
+
+    <View
+        android:id="@+id/topView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"/>
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/arrow_back"
+        android:background="@color/colorPrimary"
+        />
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal Details"
+        android:textSize="32sp"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat_bold"/>
+
+
+
+    <View
+        android:id="@+id/topView2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/topView1"
+        android:background="@drawable/wave"/>
+
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="50dp"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:background="@drawable/button_bg"
+        android:layout_centerHorizontal="true"
+        android:text="Ok"/>
+
+   <LinearLayout
+       android:id="@+id/linearLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="10dp"
+       android:layout_below="@+id/topView2"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/border_edittext">
+
+       <TextView
+           android:id="@+id/goalName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/topView2"
+           android:layout_marginTop="40dp"
+           android:layout_marginLeft="20dp"
+           android:fontFamily="@font/montserrat_bold"
+           android:textSize="20sp"
+           android:textColor="#483D8B"
+           android:textStyle="bold"
+           android:text="sad"
+           />
+
+       <TextView
+           android:id="@+id/goalStart"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/goalName"
+           android:layout_marginTop="30dp"
+           android:layout_marginLeft="20dp"
+           android:fontFamily="@font/montserrat_bold"
+           android:textSize="20sp"
+           android:textColor="#483D8B"
+           android:textStyle="bold"
+           android:text="das"
+           />
+
+       <TextView
+           android:id="@+id/goalEnd"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/goalStart"
+           android:layout_marginTop="30dp"
+           android:layout_marginBottom="40dp"
+           android:layout_marginLeft="20dp"
+           android:fontFamily="@font/montserrat_bold"
+           android:textSize="20sp"
+           android:textColor="#483D8B"
+           android:textStyle="bold"
+           android:text="sadf"
+           />
+
+
+   </LinearLayout>
+
+
+</RelativeLayout>

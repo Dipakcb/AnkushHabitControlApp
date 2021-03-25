@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+
+    <ImageView
+        android:id="@+id/file"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/topView2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/file"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/noData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/file"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="No Data Available"
+        android:textSize="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/goal_listView"
+        android:layout_below="@+id/topView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <View
+        android:id="@+id/topView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"/>
+
+    <ImageButton
+        android:id="@+id/history_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_history"
+        android:background="@color/colorPrimaryDark"
+        />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textOff="Off"
+        android:textOn="On"
+        android:checked="true"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_toLeftOf="@+id/history_btn"
+        android:text="Daily Reminder " />
+
+    <View
+        android:id="@+id/topView2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/topView1"
+        android:background="@drawable/wave"/>
+
+
+    <TextView
+        android:id="@+id/g_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/montserrat_bold"/>
+
+    <TextView
+        android:id="@+id/g_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/g_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="“You’ll never change your life until you change something you do daily. The secret of your success is found in your daily routine.” – John C. Maxwell"
+        android:textSize="12sp"
+        android:textColor="#ffff"
+        />
+
+
+    <ImageButton
+        android:id="@+id/add_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_addbt"
+        android:layout_margin="40dp"
+        android:background="@drawable/button_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
