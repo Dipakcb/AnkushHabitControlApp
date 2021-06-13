@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -54,42 +55,51 @@
         android:background="@drawable/wave"/>
 
 
-    <EditText
-        android:id="@+id/goal_name"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:paddingHorizontal="80dp"
-        android:layout_centerInParent="true"
-        android:maxLength="20"
-        android:fontFamily="@font/montserrat_regular"
-        android:hint=" Enter Goal Name"
-        android:inputType="text"
-        android:singleLine="true"
-        android:background="@drawable/border_edittext"
-        />
-    <Button
-        android:id="@+id/submit_button"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:background="@drawable/button_bg"
-        android:layout_below="@+id/goal_name"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/montserrat_bold"
         android:layout_centerInParent="true"
-        android:textColor="#ffff"
-        android:text="Submit"/>
+        android:padding="20dp"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/cancel_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/submit_button"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="150dp"
-        android:textColor="#483D8B"
-        android:fontFamily="@font/montserrat_bold"
-        android:background="@drawable/border_edittext"
-        android:layout_centerInParent="true"
-        android:text="Clear"/>
+
+        <EditText
+            android:id="@+id/goal_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Enter Goal Name"
+            android:inputType="text"
+            android:singleLine="true"
+            android:fontFamily="@font/montserrat_regular"
+            android:background="@drawable/border_edittext"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="#ffff"
+            android:text="Submit"/>
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#483D8B"
+            android:fontFamily="@font/montserrat_bold"
+            android:background="@drawable/border_edittext"
+            android:text="Clear"/>
+
+    </LinearLayout>
+
 </RelativeLayout>

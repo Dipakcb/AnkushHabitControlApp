@@ -7,85 +7,92 @@
     android:background="#2F4F4F"
     tools:context=".WelcomeActivity">
 
-    <View
-        android:layout_width="300dp"
-        android:layout_height="400dp"
+    <LinearLayout
+        android:id="@+id/center_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:orientation="vertical"
         android:layout_centerInParent="true"
-        android:background="#243447"
-   />
+        android:background="#243447">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/heading1"
-        android:src="@drawable/goal"/>
-    <TextView
-        android:id="@+id/heading1"
-        android:layout_above="@+id/heading2"
-        android:layout_width="250dp"
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/goal"/>
+        <TextView
+            android:id="@+id/heading1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Take 21 days challenge !"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_bold"
+            />
+
+        <TextView
+            android:id="@+id/heading2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Any habit can be made or changed if you stick on it for at least 21 days."
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/montserrat_regular"
+            />
+        <TextView
+            android:id="@+id/heading3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="So just control yourself for 21 days and then you have to only maintain the flow !!!"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/montserrat_regular"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Take 21 days challenge !"
-        android:paddingVertical="10dp"
-        android:textColor="#ffffff"
-        android:textSize="22sp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:fontFamily="@font/montserrat_bold"
-
-        />
-
-    <TextView
-    android:id="@+id/heading2"
-    android:layout_width="250dp"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-    android:text="Any habit can be made or changed if you stick on it for at least 21 days."
-    android:textColor="#ffffff"
-    android:textSize="18sp"
-    android:textStyle="italic"
-    android:fontFamily="@font/montserrat_regular"
-    />
-    <TextView
-        android:id="@+id/heading3"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heading2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="So just control yourself for 21 days and then you have to only maintain the flow !!!"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        android:textStyle="italic"
-        android:fontFamily="@font/montserrat_regular"
-        />
-
-
-
-    <EditText
-        android:id="@+id/user_Name"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:hint="Enter your name  "
         android:layout_alignParentBottom="true"
-        android:maxLength="15"
-        android:paddingHorizontal="60dp"
-        android:background="@drawable/border_edittext"
-        android:layout_margin="10dp"
-        />
-    <Button
-        android:id="@+id/submit_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:textStyle="bold"
-        android:layout_margin="10dp"
-        android:fontFamily="@font/montserrat_regular"
-        android:background="@drawable/button_bg"
-        android:textColor="#ffff"
-        />
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/user_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/border_edittext"
+            android:hint="Enter your name  "
+            android:maxLength="15"
+            android:padding="10dp"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:background="@drawable/button_bg"
+            android:textColor="#ffff"
+            />
+
+    </LinearLayout>
+
+
 </RelativeLayout>
